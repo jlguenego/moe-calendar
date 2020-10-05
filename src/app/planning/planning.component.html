@@ -23,106 +23,26 @@
   </section>
   <section class="title">
     <h1>Sans titre</h1>
-    <button>
-      <mat-icon [inline]="true">edit</mat-icon>
+    <button mat-icon-button aria-label="up">
+      <mat-icon>edit</mat-icon>
     </button>
   </section>
   <section class="content">
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore mollitia,
-      natus sapiente, hic ea nemo alias sit laudantium laboriosam excepturi quas
-      voluptas quaerat sed consequatur optio corrupti ratione incidunt
-      voluptatibus.
-    </p>
+    <header>
+      <section class="year">
+        <span>2020</span>
+      </section>
+      <section class="week">
+        <button mat-icon-button aria-label="previous">
+          <mat-icon>keyboard_arrow_left</mat-icon>
+        </button>
+        <span *ngFor="let weekNbr of [10, 11, 12, 13, 14, 15, 16]">
+          {{ weekNbr }}
+        </span>
+        <button mat-icon-button aria-label="next">
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </button>
+      </section>
+    </header>
   </section>
 </main>
