@@ -5,9 +5,10 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { PlanningRoutingModule } from './planning-routing.module';
 import { PlanningComponent } from './planning.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
-  declarations: [PlanningComponent],
+  declarations: [PlanningComponent, FormComponent],
   imports: [
     CommonModule,
     PlanningRoutingModule,
