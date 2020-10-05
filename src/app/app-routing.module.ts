@@ -6,6 +6,7 @@ import { LegalComponent } from './routes/legal/legal.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'legal', component: LegalComponent },
+  { path: 'planning', loadChildren: () => import('./planning/planning.module').then(m => m.PlanningModule) },
 ];
 
 @NgModule({
