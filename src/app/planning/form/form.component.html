@@ -1,1 +1,23 @@
-<p>form works!</p>
+<main>
+  <section>
+    <h1>Ajout d'une tâche</h1>
+    <form [formGroup]="f" (ngSubmit)="submit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Date de début/fin</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input matStartDate placeholder="Date de début" formControlName="start" />
+          <input matEndDate placeholder="Date de fin" formControlName="end" />
+        </mat-date-range-input>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput placeholder="Préparation chantier" formControlName="name" />
+      </mat-form-field>
+      <button [disabled]="f.invalid" mat-raised-button color="primary">
+        Ajouter
+      </button>
+    </form>
+  </section>
+</main>
