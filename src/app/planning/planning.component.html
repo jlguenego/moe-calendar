@@ -1,5 +1,5 @@
 <main>
-  <section class="command mat-elevation-z6">
+  <section class="command mat-elevation-z3">
     <nav>
       <button mat-mini-fab color="primary" aria-label="up">
         <mat-icon>add</mat-icon>
@@ -24,25 +24,37 @@
   <section class="title">
     <h1>Sans titre</h1>
     <button mat-icon-button aria-label="up">
-      <mat-icon>edit</mat-icon>
+      <mat-icon [inline]="true">edit</mat-icon>
     </button>
   </section>
   <section class="content">
+    <div class="arrow">
+      <button mat-icon-button aria-label="previous">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </button>
+    </div>
     <header>
       <section class="year">
         <span>2020</span>
       </section>
       <section class="week">
-        <button mat-icon-button aria-label="previous">
-          <mat-icon>keyboard_arrow_left</mat-icon>
-        </button>
         <span *ngFor="let weekNbr of [10, 11, 12, 13, 14, 15, 16]">
           {{ weekNbr }}
         </span>
-        <button mat-icon-button aria-label="next">
-          <mat-icon>keyboard_arrow_right</mat-icon>
-        </button>
+      </section>
+      <section class="task" *ngFor="let t of tasks">
+        <div class="bar">
+          <span *ngFor="let sel of t.selected" [class.selected]="sel"></span>
+        </div>
+        <div class="name">
+          {{ t.name }}
+        </div>
       </section>
     </header>
+    <div class="arrow">
+      <button mat-icon-button aria-label="next">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+      </button>
+    </div>
   </section>
 </main>
