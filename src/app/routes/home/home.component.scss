@@ -8,3 +8,20 @@ mat-card {
   display: flex;
   flex-flow: row wrap;
 }
+
+$add-size: 3em;
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+
+  .mat-icon {
+    font-size: $add-size;
+  }
+
+  div {
+    text-align: center;
+  }
+}
