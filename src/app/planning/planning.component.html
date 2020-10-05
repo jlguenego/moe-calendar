@@ -16,10 +16,14 @@
       <button mat-icon-button aria-label="up">
         <mat-icon>print</mat-icon>
       </button>
-      <button mat-icon-button aria-label="up">
+      <button mat-icon-button aria-label="up" [matMenuTriggerFor]="menu">
         <mat-icon>more_vert</mat-icon>
       </button>
     </nav>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
   </section>
   <section class="title">
     <h1>Sans titre</h1>

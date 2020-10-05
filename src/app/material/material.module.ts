@@ -7,26 +7,22 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatMenuModule } from '@angular/material/menu';
+
+const modules = [
+  MatButtonModule,
+  MatCardModule,
+  MatNativeDateModule,
+  MatDatepickerModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatMenuModule,
+];
 
 @NgModule({
   declarations: [],
-  imports: [
-    MatButtonModule,
-    MatCardModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-  ],
-  exports: [
-    MatButtonModule,
-    MatCardModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-  ],
+  imports: modules,
+  exports: modules,
 })
 export class MaterialModule {}
