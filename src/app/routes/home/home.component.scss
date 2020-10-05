@@ -1,0 +1,10 @@
+mat-card {
+  width: 8em;
+  height: 8em;
+  margin: 0.5em;
+}
+
+.card-list {
+  display: flex;
+  flex-flow: row wrap;
+}
