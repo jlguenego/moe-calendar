@@ -1,13 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './routes/home/home.component';
 import { LegalComponent } from './routes/legal/legal.component';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LegalComponent],
@@ -15,8 +14,7 @@ import { LegalComponent } from './routes/legal/legal.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule,
-    MatCardModule,
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
